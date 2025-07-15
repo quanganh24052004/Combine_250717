@@ -13,6 +13,15 @@
 		2CD4F4A62E25F5BE005165C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD4F49A2E25F5BE005165C3 /* Assets.xcassets */; };
 		2CD4F4A82E25F5BE005165C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD4F49D2E25F5BE005165C3 /* LaunchScreen.storyboard */; };
 		2CD4F4A92E25F5BE005165C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD4F49F2E25F5BE005165C3 /* Main.storyboard */; };
+		2CD4F4B52E25FB38005165C3 /* Onboarding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD4F4B32E25FB38005165C3 /* Onboarding.xib */; };
+		2CD4F4BF2E260342005165C3 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD4F4BD2E260342005165C3 /* PrimaryButton.swift */; };
+		2CD4F4C22E260344005165C3 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD4F4C02E260344005165C3 /* Onboarding.swift */; };
+		2CD4F4C42E260350005165C3 /* PrimaryButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD4F4C32E260350005165C3 /* PrimaryButton.xib */; };
+		2CD4F4C62E2608DD005165C3 /* TextFieldPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD4F4C52E2608DD005165C3 /* TextFieldPrimary.swift */; };
+		2CD4F4C82E2608E7005165C3 /* TextFieldPrimary.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD4F4C72E2608E7005165C3 /* TextFieldPrimary.xib */; };
+		2CD4F4CB2E260986005165C3 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD4F4C92E260986005165C3 /* OnboardingScreen.swift */; };
+		2CD4F4CC2E260986005165C3 /* OnboardingScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD4F4CA2E260986005165C3 /* OnboardingScreen.xib */; };
+		2CD4F4D02E260F99005165C3 /* Primary_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD4F4CF2E260F99005165C3 /* Primary_Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		2CD4F49E2E25F5BE005165C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CD4F4A02E25F5BE005165C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2CD4F4A12E25F5BE005165C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2CD4F4B32E25FB38005165C3 /* Onboarding.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Onboarding.xib; sourceTree = "<group>"; };
+		2CD4F4BD2E260342005165C3 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		2CD4F4C02E260344005165C3 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		2CD4F4C32E260350005165C3 /* PrimaryButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrimaryButton.xib; sourceTree = "<group>"; };
+		2CD4F4C52E2608DD005165C3 /* TextFieldPrimary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPrimary.swift; sourceTree = "<group>"; };
+		2CD4F4C72E2608E7005165C3 /* TextFieldPrimary.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldPrimary.xib; sourceTree = "<group>"; };
+		2CD4F4C92E260986005165C3 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
+		2CD4F4CA2E260986005165C3 /* OnboardingScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingScreen.xib; sourceTree = "<group>"; };
+		2CD4F4CF2E260F99005165C3 /* Primary_Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Primary_Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +105,8 @@
 		2CD4F4AC2E25F5CC005165C3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2CD4F4BE2E260342005165C3 /* Components */,
+				2CD4F4C12E260344005165C3 /* Controllers */,
 				2CD4F4A12E25F5BE005165C3 /* ViewController.swift */,
 			);
 			path = Controller;
@@ -95,6 +115,8 @@
 		2CD4F4AD2E25F5DA005165C3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2CD4F4B72E2602D1005165C3 /* Components */,
+				2CD4F4B82E2602E0005165C3 /* Views */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -129,6 +151,59 @@
 				2CD4F49F2E25F5BE005165C3 /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2CD4F4B72E2602D1005165C3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2CD4F4C32E260350005165C3 /* PrimaryButton.xib */,
+				2CD4F4C72E2608E7005165C3 /* TextFieldPrimary.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2CD4F4B82E2602E0005165C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CD4F4CD2E260996005165C3 /* Onboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2CD4F4BE2E260342005165C3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2CD4F4CF2E260F99005165C3 /* Primary_Button.swift */,
+				2CD4F4BD2E260342005165C3 /* PrimaryButton.swift */,
+				2CD4F4C52E2608DD005165C3 /* TextFieldPrimary.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2CD4F4C12E260344005165C3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CD4F4CE2E2609A1005165C3 /* Onboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2CD4F4CD2E260996005165C3 /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				2CD4F4B32E25FB38005165C3 /* Onboarding.xib */,
+				2CD4F4CA2E260986005165C3 /* OnboardingScreen.xib */,
+			);
+			path = Onboard;
+			sourceTree = "<group>";
+		};
+		2CD4F4CE2E2609A1005165C3 /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				2CD4F4C02E260344005165C3 /* Onboarding.swift */,
+				2CD4F4C92E260986005165C3 /* OnboardingScreen.swift */,
+			);
+			path = Onboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +269,11 @@
 			files = (
 				2CD4F4A62E25F5BE005165C3 /* Assets.xcassets in Resources */,
 				2CD4F4A82E25F5BE005165C3 /* LaunchScreen.storyboard in Resources */,
+				2CD4F4B52E25FB38005165C3 /* Onboarding.xib in Resources */,
 				2CD4F4A92E25F5BE005165C3 /* Main.storyboard in Resources */,
+				2CD4F4CC2E260986005165C3 /* OnboardingScreen.xib in Resources */,
+				2CD4F4C82E2608E7005165C3 /* TextFieldPrimary.xib in Resources */,
+				2CD4F4C42E260350005165C3 /* PrimaryButton.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD4F4C62E2608DD005165C3 /* TextFieldPrimary.swift in Sources */,
 				2CD4F4A32E25F5BE005165C3 /* AppDelegate.swift in Sources */,
+				2CD4F4D02E260F99005165C3 /* Primary_Button.swift in Sources */,
 				2CD4F4A42E25F5BE005165C3 /* SceneDelegate.swift in Sources */,
+				2CD4F4CB2E260986005165C3 /* OnboardingScreen.swift in Sources */,
+				2CD4F4C22E260344005165C3 /* Onboarding.swift in Sources */,
+				2CD4F4BF2E260342005165C3 /* PrimaryButton.swift in Sources */,
 				2CD4F4A52E25F5BE005165C3 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
