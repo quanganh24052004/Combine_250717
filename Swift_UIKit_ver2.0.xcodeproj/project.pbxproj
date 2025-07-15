@@ -6,30 +6,25 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2CD4F4A32E25F5BE005165C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD4F4992E25F5BE005165C3 /* AppDelegate.swift */; };
+		2CD4F4A42E25F5BE005165C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD4F4A02E25F5BE005165C3 /* SceneDelegate.swift */; };
+		2CD4F4A52E25F5BE005165C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD4F4A12E25F5BE005165C3 /* ViewController.swift */; };
+		2CD4F4A62E25F5BE005165C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD4F49A2E25F5BE005165C3 /* Assets.xcassets */; };
+		2CD4F4A82E25F5BE005165C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD4F49D2E25F5BE005165C3 /* LaunchScreen.storyboard */; };
+		2CD4F4A92E25F5BE005165C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD4F49F2E25F5BE005165C3 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		2CD4F4812E25F5B3005165C3 /* Swift_UIKit_ver2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_UIKit_ver2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD4F4992E25F5BE005165C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2CD4F49A2E25F5BE005165C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CD4F49B2E25F5BE005165C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CD4F49C2E25F5BE005165C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2CD4F49E2E25F5BE005165C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CD4F4A02E25F5BE005165C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2CD4F4A12E25F5BE005165C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		2CD4F4932E25F5B5005165C3 /* Exceptions for "Swift_UIKit_ver2.0" folder in "Swift_UIKit_ver2.0" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 2CD4F4802E25F5B3005165C3 /* Swift_UIKit_ver2.0 */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		2CD4F4832E25F5B3005165C3 /* Swift_UIKit_ver2.0 */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				2CD4F4932E25F5B5005165C3 /* Exceptions for "Swift_UIKit_ver2.0" folder in "Swift_UIKit_ver2.0" target */,
-			);
-			path = Swift_UIKit_ver2.0;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2CD4F47E2E25F5B3005165C3 /* Frameworks */ = {
@@ -45,7 +40,7 @@
 		2CD4F4782E25F5B3005165C3 = {
 			isa = PBXGroup;
 			children = (
-				2CD4F4832E25F5B3005165C3 /* Swift_UIKit_ver2.0 */,
+				2CD4F4A22E25F5BE005165C3 /* Swift_UIKit_ver2.0 */,
 				2CD4F4822E25F5B3005165C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +51,84 @@
 				2CD4F4812E25F5B3005165C3 /* Swift_UIKit_ver2.0.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2CD4F4A22E25F5BE005165C3 /* Swift_UIKit_ver2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				2CD4F4AA2E25F5C4005165C3 /* App */,
+				2CD4F4AB2E25F5C7005165C3 /* Model */,
+				2CD4F4AC2E25F5CC005165C3 /* Controller */,
+				2CD4F4AD2E25F5DA005165C3 /* View */,
+				2CD4F4AE2E25F5DE005165C3 /* Resources */,
+				2CD4F4AF2E25F5E8005165C3 /* Extensions */,
+				2CD4F4B02E25F5EE005165C3 /* Helpers */,
+				2CD4F4B12E25F602005165C3 /* Storyboards */,
+			);
+			path = Swift_UIKit_ver2.0;
+			sourceTree = "<group>";
+		};
+		2CD4F4AA2E25F5C4005165C3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2CD4F4992E25F5BE005165C3 /* AppDelegate.swift */,
+				2CD4F4A02E25F5BE005165C3 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2CD4F4AB2E25F5C7005165C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CD4F4AC2E25F5CC005165C3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CD4F4A12E25F5BE005165C3 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2CD4F4AD2E25F5DA005165C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CD4F4AE2E25F5DE005165C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2CD4F49A2E25F5BE005165C3 /* Assets.xcassets */,
+				2CD4F49B2E25F5BE005165C3 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2CD4F4AF2E25F5E8005165C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2CD4F4B02E25F5EE005165C3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2CD4F4B12E25F602005165C3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2CD4F49D2E25F5BE005165C3 /* LaunchScreen.storyboard */,
+				2CD4F49F2E25F5BE005165C3 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +145,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				2CD4F4832E25F5B3005165C3 /* Swift_UIKit_ver2.0 */,
 			);
 			name = Swift_UIKit_ver2.0;
 			packageProductDependencies = (
@@ -122,6 +192,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD4F4A62E25F5BE005165C3 /* Assets.xcassets in Resources */,
+				2CD4F4A82E25F5BE005165C3 /* LaunchScreen.storyboard in Resources */,
+				2CD4F4A92E25F5BE005165C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +205,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD4F4A32E25F5BE005165C3 /* AppDelegate.swift in Sources */,
+				2CD4F4A42E25F5BE005165C3 /* SceneDelegate.swift in Sources */,
+				2CD4F4A52E25F5BE005165C3 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2CD4F49D2E25F5BE005165C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CD4F49C2E25F5BE005165C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2CD4F49F2E25F5BE005165C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CD4F49E2E25F5BE005165C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2CD4F4952E25F5B5005165C3 /* Debug */ = {
@@ -147,7 +242,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WT5PJGD97N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Swift_UIKit_ver2.0/Info.plist;
+				INFOPLIST_FILE = Swift_UIKit_ver2.0/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -175,7 +270,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WT5PJGD97N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Swift_UIKit_ver2.0/Info.plist;
+				INFOPLIST_FILE = Swift_UIKit_ver2.0/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
