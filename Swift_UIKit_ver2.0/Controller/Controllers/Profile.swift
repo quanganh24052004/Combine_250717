@@ -32,16 +32,17 @@ class Profile: UIViewController {
     }
     
     private func setupCombineBindings() {
-        // Observe user information changes
-        userDataManager.userInformationPublisher
+        // Observe user state changes using Command Pattern
+        userDataManager.onUserState
             .receive(on: DispatchQueue.main)
-            .sink { [weak self] userInfo in
-                self?.updateUI(with: userInfo)
+            .sink { [weak self] state in
+                self?.updateUI(with: state.userInformation)
             }
             .store(in: &cancellables)
         
         // Initial update
-        updateUI(with: userDataManager.userInformation)
+        let currentState = userDataManager.onUserState.value
+        updateUI(with: currentState.userInformation)
     }
     
     private func updateUI(with userInfo: UserInformation) {
@@ -51,16 +52,4 @@ class Profile: UIViewController {
         gender.text = "\(userInfo.gender)"
         bmi.text = "\(userInfo.bmiValue)"
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

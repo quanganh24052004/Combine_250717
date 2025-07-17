@@ -51,90 +51,92 @@ class Information: UIViewController {
     }
     
     private func setupCombineBindings() {
-        // Observe validation status để enable/disable button
-        userDataManager.validationPublisher
+        // Observe state changes using Command Pattern
+        userDataManager.onUserState
             .receive(on: DispatchQueue.main)
-            .sink { [weak self] isValid in
-                self?.button.isEnabled = isValid
-                self?.button.alpha = isValid ? 1.0 : 0.5
+            .sink { [weak self] state in
+                self?.handleStateUpdate(state)
             }
             .store(in: &cancellables)
         
-        // Observe validation message để hiển thị lỗi
-        userDataManager.validationMessagePublisher
-            .receive(on: DispatchQueue.main)
-            .sink { [weak self] message in
-                if let message = message {
-                    self?.showValidationError(message)
-                }
-            }
-            .store(in: &cancellables)
-        
-        // Setup text field bindings
+        // Setup text field bindings using Command Pattern
         setupTextFieldBindings()
     }
     
+    private func handleStateUpdate(_ state: UserState) {
+        // Update button state based on validation
+        button.isEnabled = state.isValid
+        button.alpha = state.isValid ? 1.0 : 0.5
+        
+        // Show validation error if any
+        if let message = state.validationMessage {
+            showValidationError(message)
+        }
+    }
+    
     private func setupTextFieldBindings() {
-        // Bind firstName text field using extension
+        // Bind firstName text field using Command Pattern
         firstName.textField.textPublisher
             .debounced(for: .milliseconds(300), scheduler: DispatchQueue.main)
             .sink { [weak self] text in
-                self?.userDataManager.updateFirstName(text)
+                self?.userDataManager.onUserAction.send(.updateFirstName(text))
             }
             .store(in: &cancellables)
         
-        // Bind lastName text field using extension
+        // Bind lastName text field using Command Pattern
         lastName.textField.textPublisher
             .debounced(for: .milliseconds(300), scheduler: DispatchQueue.main)
             .sink { [weak self] text in
-                self?.userDataManager.updateLastName(text)
+                self?.userDataManager.onUserAction.send(.updateLastName(text))
             }
             .store(in: &cancellables)
         
-        // Bind weight text field using extension
+        // Bind weight text field using Command Pattern
         weight.textField.textPublisher
             .debounced(for: .milliseconds(300), scheduler: DispatchQueue.main)
             .sink { [weak self] text in
-                self?.userDataManager.updateWeight(text)
+                self?.userDataManager.onUserAction.send(.updateWeight(text))
             }
             .store(in: &cancellables)
         
-        // Bind height text field using extension
+        // Bind height text field using Command Pattern
         height.textField.textPublisher
             .debounced(for: .milliseconds(300), scheduler: DispatchQueue.main)
             .sink { [weak self] text in
-                self?.userDataManager.updateHeight(text)
+                self?.userDataManager.onUserAction.send(.updateHeight(text))
             }
             .store(in: &cancellables)
         
-        // Bind gender segmented control
+        // Bind gender segmented control using Command Pattern
         gender.publisher(for: .valueChanged)
             .sink { [weak self] _ in
                 let selectedGender = self?.gender.selectedSegmentIndex == 0 ? "Male" : "Female"
-                self?.userDataManager.updateGender(selectedGender)
+                self?.userDataManager.onUserAction.send(.updateGender(selectedGender))
             }
             .store(in: &cancellables)
     }
     
     private func loadExistingData() {
-        // Load existing data from UserDataManager
-        firstName.textField.text = userDataManager.userInformation.firstName
-        lastName.textField.text = userDataManager.userInformation.lastName
-        weight.textField.text = userDataManager.userInformation.weight
-        height.textField.text = userDataManager.userInformation.height
+        // Load existing data from UserDataManager state
+        let currentState = userDataManager.onUserState.value
+        firstName.textField.text = currentState.userInformation.firstName
+        lastName.textField.text = currentState.userInformation.lastName
+        weight.textField.text = currentState.userInformation.weight
+        height.textField.text = currentState.userInformation.height
         
         // Load gender from segmented control
-        if userDataManager.userInformation.gender == "Male" {
+        if currentState.userInformation.gender == "Male" {
             gender.selectedSegmentIndex = 0
-        } else if userDataManager.userInformation.gender == "Female" {
+        } else if currentState.userInformation.gender == "Female" {
             gender.selectedSegmentIndex = 1
         }
     }
     
     private func saveAndContinue() {
-        // Check if data is valid
-        guard userDataManager.isDataValid else {
-            if let errorMessage = userDataManager.validationMessage {
+        // Check if data is valid using Command Pattern
+        let currentState = userDataManager.onUserState.value
+        guard currentState.isValid else {
+            if let errorMessage = currentState.validationMessage {
                 showAlert(message: errorMessage)
             }
             return
@@ -155,19 +157,7 @@ class Information: UIViewController {
         // Hiển thị lỗi validation một cách nhẹ nhàng hơn
         // Có thể thêm toast hoặc label error
         print("Validation Error: \(message)")
-        }
-        
-        
-        /*
-         // MARK: - Navigation
-         
-         // In a storyboard-based application, you will often want to do a little preparation before navigation
-         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
-         }
-         */
-        
     }
+}
 
 
