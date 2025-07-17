@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Form" customModule="Swift_UIKit_ver2_0" customModuleProvider="target">
+            <connections>
+                <outlet property="form" destination="7pV-2C-gbm" id="5fJ-1G-vAc"/>
+                <outlet property="textField" destination="6It-fp-cJF" id="Wpg-wa-S1I"/>
+                <outlet property="title" destination="Ne5-6l-s0j" id="khF-eY-e4y"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="7pV-2C-gbm" userLabel="Form">
+                    <rect key="frame" x="0.0" y="0.0" width="346" height="48"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne5-6l-s0j">
+                            <rect key="frame" x="0.0" y="0.0" width="346" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="awh-oB-GSc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <color key="textColor" name="Neutral2"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6It-fp-cJF" userLabel="TextField">
+                            <rect key="frame" x="0.0" y="36" width="346" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="t1f-yX-hes"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="6It-fp-cJF" secondAttribute="trailing" id="23w-eS-eSo"/>
+                        <constraint firstAttribute="bottom" secondItem="6It-fp-cJF" secondAttribute="bottom" id="2vH-kq-uCo"/>
+                        <constraint firstItem="6It-fp-cJF" firstAttribute="leading" secondItem="7pV-2C-gbm" secondAttribute="leading" id="BrN-2g-Fg0"/>
+                        <constraint firstAttribute="trailing" secondItem="6It-fp-cJF" secondAttribute="trailing" id="Eub-WC-Xq9"/>
+                        <constraint firstItem="Ne5-6l-s0j" firstAttribute="leading" secondItem="7pV-2C-gbm" secondAttribute="leading" id="Ivf-A5-th6"/>
+                        <constraint firstItem="Ne5-6l-s0j" firstAttribute="top" secondItem="7pV-2C-gbm" secondAttribute="top" id="Q7R-O1-gCa"/>
+                        <constraint firstAttribute="trailing" secondItem="Ne5-6l-s0j" secondAttribute="trailing" id="TZs-Ij-moO"/>
+                        <constraint firstItem="6It-fp-cJF" firstAttribute="leading" secondItem="7pV-2C-gbm" secondAttribute="leading" id="a3e-C2-BMp"/>
+                        <constraint firstAttribute="trailing" secondItem="Ne5-6l-s0j" secondAttribute="trailing" id="tQY-jy-YUi"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="7pV-2C-gbm" secondAttribute="bottom" id="R9z-gu-JCR"/>
+                <constraint firstAttribute="trailing" secondItem="7pV-2C-gbm" secondAttribute="trailing" id="Rvh-ia-onM"/>
+                <constraint firstItem="7pV-2C-gbm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fbA-bp-X8d"/>
+                <constraint firstItem="7pV-2C-gbm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sCP-Sp-HfR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-83.181818181818187" y="79.707112970711307"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Neutral2">
+            <color red="0.3490196168422699" green="0.38039219379425049" blue="0.47843140363693237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

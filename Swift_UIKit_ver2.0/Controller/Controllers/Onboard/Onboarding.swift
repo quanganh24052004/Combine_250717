@@ -16,9 +16,8 @@ class Onboarding: UIViewController {
         view.backgroundColor = .backgroud1
         
         continueButton.setTitle("Continue")
-        //continueButton.titleLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
         continueButton.onTap = { [weak self] in
-            let nextVC = OnboardingScreen()
+            let nextVC = Information()
             self?.navigationController?.pushViewController(nextVC, animated: true)
             
         }

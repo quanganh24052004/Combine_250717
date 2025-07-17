@@ -15,6 +15,7 @@ class PrimaryButton: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+
         loadFromNib()
     }
 
@@ -30,7 +31,7 @@ class PrimaryButton: UIView {
     private func loadFromNib() {
         let nib = UINib(nibName: "PrimaryButton", bundle: nil)
         let nibView = nib.instantiate(withOwner: self).first as! UIView
-        
+
         addSubview(nibView)
         
         nibView.translatesAutoresizingMaskIntoConstraints = false
@@ -39,8 +40,6 @@ class PrimaryButton: UIView {
         nibView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         nibView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-        button.titleLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
-//        button.titleLabel?.font = .systemFont(ofSize: 18, weight: .bold)
     }
     
     @objc private func buttonTapped() {
@@ -49,6 +48,11 @@ class PrimaryButton: UIView {
     
     public func setTitle(_ title: String) {
         button.setTitle(title, for: .normal)
+    }
+    
+    public var isEnabled: Bool {
+        get { button.isEnabled }
+        set { button.isEnabled = newValue }
     }
     
 }

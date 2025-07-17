@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CA3708F2E2744690048F284 /* CombineExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3708E2E2744690048F284 /* CombineExtensions.swift */; };
-		2CA370922E27449C0048F284 /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA370912E27449C0048F284 /* UserInformation.swift */; };
-		2CA370932E27449C0048F284 /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA370902E27449C0048F284 /* UserDataManager.swift */; };
+		2CA3708D2E27426F0048F284 /* CombineExtensions 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3708C2E27426F0048F284 /* CombineExtensions 2.swift */; };
 		2CD4F4A32E25F5BE005165C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD4F4992E25F5BE005165C3 /* AppDelegate.swift */; };
 		2CD4F4A42E25F5BE005165C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD4F4A02E25F5BE005165C3 /* SceneDelegate.swift */; };
 		2CD4F4A52E25F5BE005165C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD4F4A12E25F5BE005165C3 /* ViewController.swift */; };
@@ -31,9 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2CA3708E2E2744690048F284 /* CombineExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineExtensions.swift; sourceTree = "<group>"; };
-		2CA370902E27449C0048F284 /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
-		2CA370912E27449C0048F284 /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
+		2CA3708C2E27426F0048F284 /* CombineExtensions 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CombineExtensions 2.swift"; sourceTree = "<group>"; };
 		2CD4F4812E25F5B3005165C3 /* Swift_UIKit_ver2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_UIKit_ver2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD4F4992E25F5BE005165C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CD4F49A2E25F5BE005165C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,8 +106,6 @@
 		2CD4F4AB2E25F5C7005165C3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2CA370902E27449C0048F284 /* UserDataManager.swift */,
-				2CA370912E27449C0048F284 /* UserInformation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,7 +141,7 @@
 		2CD4F4AF2E25F5E8005165C3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2CA3708E2E2744690048F284 /* CombineExtensions.swift */,
+				2CA3708C2E27426F0048F284 /* CombineExtensions 2.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -306,14 +300,12 @@
 			files = (
 				2CD4F4A32E25F5BE005165C3 /* AppDelegate.swift in Sources */,
 				2CD4F4A42E25F5BE005165C3 /* SceneDelegate.swift in Sources */,
+				2CA3708D2E27426F0048F284 /* CombineExtensions 2.swift in Sources */,
 				2CD4F4D72E2639BA005165C3 /* Information.swift in Sources */,
 				2CD4F4CB2E260986005165C3 /* OnboardingScreen.swift in Sources */,
 				2CD4F4C22E260344005165C3 /* Onboarding.swift in Sources */,
-				2CA3708F2E2744690048F284 /* CombineExtensions.swift in Sources */,
 				2CD4F4BF2E260342005165C3 /* PrimaryButton.swift in Sources */,
 				2CD4F4D22E2634D0005165C3 /* Form.swift in Sources */,
-				2CA370922E27449C0048F284 /* UserInformation.swift in Sources */,
-				2CA370932E27449C0048F284 /* UserDataManager.swift in Sources */,
 				2CD4F5062E2662F7005165C3 /* Profile.swift in Sources */,
 				2CD4F4A52E25F5BE005165C3 /* ViewController.swift in Sources */,
 			);

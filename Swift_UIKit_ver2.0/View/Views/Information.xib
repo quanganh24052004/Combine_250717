@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Information" customModule="Swift_UIKit_ver2_0" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="827-SH-PWg" id="N85-Mx-KRB"/>
+                <outlet property="firstName" destination="UVj-jF-Wl6" id="hhe-Ud-9Od"/>
+                <outlet property="gender" destination="kpa-dZ-tUO" id="vvm-XS-Vni"/>
+                <outlet property="height" destination="Lqg-eH-uk2" id="1ad-mL-8zf"/>
+                <outlet property="lastName" destination="880-ml-vLX" id="XCg-kI-tq6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weight" destination="oWm-bj-i1I" id="ueZ-5j-A6A"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="5QV-Np-IW0">
+                    <rect key="frame" x="16" y="142" width="361" height="366"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="lFL-Tr-vYA" userLabel="FirstLastName">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="128"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVj-jF-Wl6" userLabel="FirstName" customClass="Form" customModule="Swift_UIKit_ver2_0" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="880-ml-vLX" userLabel="LastName" customClass="Form" customModule="Swift_UIKit_ver2_0" customModuleProvider="target">
+                                    <rect key="frame" x="186.66666666666663" y="0.0" width="174.33333333333337" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="qmd-Rz-Tyb" userLabel="Gender">
+                            <rect key="frame" x="0.0" y="149" width="361" height="68"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0E-kH-GGd">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="4Rf-WO-ZNc"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <color key="textColor" name="Neutral2"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kpa-dZ-tUO">
+                                    <rect key="frame" x="0.0" y="36" width="361" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="32" id="bvZ-dW-DRH"/>
+                                    </constraints>
+                                    <segments>
+                                        <segment title="Male"/>
+                                        <segment title="Female"/>
+                                    </segments>
+                                </segmentedControl>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="lVH-j2-VMd" userLabel="WeightHeight">
+                            <rect key="frame" x="0.0" y="238" width="361" height="128"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oWm-bj-i1I" userLabel="Weight" customClass="Form" customModule="Swift_UIKit_ver2_0" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lqg-eH-uk2" userLabel="Height" customClass="Form" customModule="Swift_UIKit_ver2_0" customModuleProvider="target">
+                                    <rect key="frame" x="186.66666666666663" y="0.0" width="174.33333333333337" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="lFL-Tr-vYA" firstAttribute="leading" secondItem="qmd-Rz-Tyb" secondAttribute="leading" id="5Wq-lG-WJb"/>
+                        <constraint firstItem="qmd-Rz-Tyb" firstAttribute="leading" secondItem="5QV-Np-IW0" secondAttribute="leading" id="HUj-un-Cbx"/>
+                        <constraint firstItem="qmd-Rz-Tyb" firstAttribute="leading" secondItem="lVH-j2-VMd" secondAttribute="leading" id="IRR-hz-abA"/>
+                        <constraint firstAttribute="trailing" secondItem="qmd-Rz-Tyb" secondAttribute="trailing" id="XlO-Ni-duW"/>
+                        <constraint firstItem="qmd-Rz-Tyb" firstAttribute="centerY" secondItem="5QV-Np-IW0" secondAttribute="centerY" id="hiT-Rr-0UY"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="827-SH-PWg" userLabel="Button" customClass="PrimaryButton" customModule="Swift_UIKit_ver2_0" customModuleProvider="target">
+                    <rect key="frame" x="16" y="716" width="361" height="52"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="sfJ-zL-uAu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5QV-Np-IW0" secondAttribute="trailing" constant="16" id="5cX-i7-3kt"/>
+                <constraint firstItem="5QV-Np-IW0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="BMw-Um-CdG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="827-SH-PWg" secondAttribute="bottom" constant="16" id="FMc-uQ-EzU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="827-SH-PWg" secondAttribute="trailing" constant="16" id="UIO-CE-2Jw"/>
+                <constraint firstItem="5QV-Np-IW0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="hzc-RM-sg2"/>
+                <constraint firstItem="827-SH-PWg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="yYn-3I-v3t"/>
+            </constraints>
+            <point key="canvasLocation" x="-86" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Neutral2">
+            <color red="0.3490196168422699" green="0.38039219379425049" blue="0.47843140363693237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
