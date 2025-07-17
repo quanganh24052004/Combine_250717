@@ -17,7 +17,6 @@ class Profile: UIViewController {
     @IBOutlet weak var gender: UILabel!
     @IBOutlet weak var bmi: UILabel!
     
-    // Combine properties
     private let userDataManager = UserDataManager.shared
     private var cancellables = Set<AnyCancellable>()
     
@@ -32,7 +31,7 @@ class Profile: UIViewController {
     }
     
     private func setupCombineBindings() {
-        // Observe user state changes using Command Pattern
+
         userDataManager.onUserState
             .receive(on: DispatchQueue.main)
             .sink { [weak self] state in
@@ -40,7 +39,6 @@ class Profile: UIViewController {
             }
             .store(in: &cancellables)
         
-        // Initial update
         let currentState = userDataManager.onUserState.value
         updateUI(with: currentState.userInformation)
     }

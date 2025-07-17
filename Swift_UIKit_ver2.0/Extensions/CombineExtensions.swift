@@ -79,7 +79,7 @@ extension Publishers {
             }
             
             func request(_ demand: Subscribers.Demand) {
-                // No-op for UI events
+
             }
             
             func cancel() {

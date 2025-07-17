@@ -75,7 +75,6 @@ class UserDataManager: ObservableObject {
         return stateSubject.map { $0.validationMessage }.eraseToAnyPublisher()
     }
     
-    // Current state properties for backward compatibility
     var userInformation: UserInformation {
         return stateSubject.value.userInformation
     }
@@ -196,7 +195,6 @@ class UserDataManager: ObservableObject {
 // MARK: - Combine Extensions for Enhanced Functionality
 extension UserDataManager {
     
-    // Combined publisher for all user data
     var userDataPublisher: AnyPublisher<(UserInformation, Bool, String?), Never> {
         return stateSubject
             .map { state in
@@ -205,7 +203,6 @@ extension UserDataManager {
             .eraseToAnyPublisher()
     }
     
-    // Publisher for specific user information changes
     func userInfoPublisher<T>(_ keyPath: KeyPath<UserInformation, T>) -> AnyPublisher<T, Never> {
         return stateSubject
             .map { $0.userInformation }

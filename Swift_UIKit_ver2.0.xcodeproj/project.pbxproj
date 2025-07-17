@@ -138,8 +138,8 @@
 		2CD4F4AE2E25F5DE005165C3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2CD4F49A2E25F5BE005165C3 /* Assets.xcassets */,
 				2CD4F49B2E25F5BE005165C3 /* Info.plist */,
+				2CD4F49A2E25F5BE005165C3 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
